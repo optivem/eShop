@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\**" />
+    <EmbeddedResource Remove="Base\**" />
+    <None Remove="Base\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+<PackageReference Include="Optivem.Framework.Core.Application" Version="1.0.21" />
+    <ProjectReference Include="..\Optivem.EShop.Basket.Core.Application.Interface\Optivem.EShop.Basket.Core.Application.Interface.csproj" />
+    <ProjectReference Include="..\Optivem.EShop.Basket.Core.Domain\Optivem.EShop.Basket.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+<PackageReference Include="Optivem.Framework.Infrastructure.AutoMapper" Version="1.0.21" />
+    <ProjectReference Include="..\..\Core\Optivem.EShop.Basket.Core.All\Optivem.EShop.Basket.Core.All.csproj" />
+  </ItemGroup>
+
+</Project>

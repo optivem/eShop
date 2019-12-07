@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="appsettings.Test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+<PackageReference Include="Optivem.Framework.Infrastructure.AspNetCore" Version="1.0.21" />
+<PackageReference Include="Optivem.Framework.Test.AspNetCore" Version="1.0.21" />
+<PackageReference Include="Optivem.Framework.Test.EntityFrameworkCore" Version="1.0.21" />
+<PackageReference Include="Optivem.Framework.Test.Xunit" Version="1.0.21" />
+    <ProjectReference Include="..\..\..\src\Infrastructure\Optivem.EShop.Basket.Infrastructure.EntityFrameworkCore.Migrations\Optivem.EShop.Basket.Infrastructure.EntityFrameworkCore.Migrations.csproj" />
+    <ProjectReference Include="..\..\..\src\Web\Optivem.EShop.Basket.Web.RestApi\Optivem.EShop.Basket.Web.RestApi.csproj" />
+    <ProjectReference Include="..\..\..\src\Web\Optivem.EShop.Basket.Web.RestClient\Optivem.EShop.Basket.Web.RestClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
