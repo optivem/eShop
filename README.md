@@ -1,2 +1,2 @@
-# northwind-php
-Optivem Northwind (PHP)
+# eshop
+Optivem eShop

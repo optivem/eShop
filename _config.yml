@@ -1,8 +1,0 @@
-title: Optivem Northwind (PHP)
-description: PHP REST API for the Northwind application using Laravel
-google_analytics: UA-63306472-4
-show_downloads: true
-theme: jekyll-theme-cayman
-
-gems:
-  - jekyll-mentions
